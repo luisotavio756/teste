@@ -1,0 +1,296 @@
+body{
+	font-family: 'Product Sans Regular' !important;
+}
+
+a{
+	text-decoration: none !important;
+	color: inherit;
+
+}
+
+a:hover{
+	text-decoration: none !important;
+	color: inherit;
+}
+
+/*	FADE EFFECT	*/
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; } 
+}
+
+@-moz-keyframes fadeIn {
+	0% { opacity: 0;}
+	100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.fadeIn {
+	-webkit-animation: fadeIn 1s ease-in-out;
+	-moz-animation: fadeIn 1s ease-in-out;
+	-o-animation: fadeIn 1s ease-in-out;
+	animation: fadeIn 1s ease-in-out;
+}
+
+/*	NAV	*/
+
+.nav-link:hover{
+	/*text-decoration: underline;*/
+	text-shadow: 2px 2px 8px white;
+	/*padding-top: 0.1px;*/
+	/*color: black !important;*/
+	/*font-family: 'Roboto' !important;
+	font-weight: 600;*/
+	transition-duration: 0.5s;
+}
+
+.nav-link{
+	color: white !important;
+}
+
+.navbar{
+	box-shadow: -12px -8px 5px 5px white; 
+	/*height: 75px;*/
+	/*background-color: red;*/
+	transition: all 1s, background-image 2s;
+}
+
+.navbar-dark{
+	background-color: black
+}
+
+@media (max-width: 700px) {
+	.navbar-nav > .nav-item{
+		margin-right: auto !important;
+		margin-left: auto !important;
+	}
+
+	.btn-nav{
+		display: block !important;
+	}
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 20px;
+	background-color: #333;
+	cursor: pointer;
+	border-radius: 360px;
+	-webkit-animation: fadeIn 0.5s ease-in-out;
+	-moz-animation: fadeIn 0.5s ease-in-out;
+	-o-animation: fadeIn 0.5s ease-in-out;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+#myBtn:hover {
+	background-color: #555;
+}
+
+/*	FLOATING LABELS	*/
+
+label {
+	color: #ffffffe0;
+	font-size: 1.25em;
+	font-weight: 500;
+	left: .4em;
+	position: absolute;
+	top: 0.6em;
+	transition: all 0.1s linear;
+}
+
+input, select, textarea {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #ffffffe0;
+	color: #ffffffe0;
+	font-size: 1.15em;
+	padding: .75em .5em .5em;
+	width: 100%;
+}
+
+select:focus + label,
+select + label.show {
+	border-radius: 4px;
+	color: #ffffffe0;
+	font-size: 1em;
+	left: .5em;
+	padding: 0 .15em;
+	top: -1em;
+}
+
+textarea:focus + label,
+textarea + label.show {
+	border-radius: 4px;
+	color: #ffffffe0;
+	font-size: 1em;
+	left: .5em;
+	padding: 0 .15em;
+	top: -1em;
+}
+
+
+input:focus + label,
+input + label.show {
+	border-radius: 4px;
+	color: #ffffffe0;
+	font-size: 1em;
+	left: .5em;
+	padding: 0 .15em;
+	top: -1em;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.form-group {
+	margin-bottom: 1.75em;
+	position: relative;
+}
+
+input:focus {
+	border-color: #ffffffe0;
+	outline: 0;
+}
+
+select:focus {
+	border-color: #ffffffe0;
+	outline: 0;
+}
+
+textarea:focus {
+	border-color: #ffffffe0;
+	outline: 0;
+}
+
+/*	SCROOL BAR */
+::-webkit-scrollbar {
+	width: 5px;
+
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #333; 
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	opacity: 0.5; 
+}
+
+/*	PARALAX */
+.paralax {
+	/* The image used */
+	background-image: url("../img/banner.jpg");
+
+	/* Set a specific height */
+	min-height: 100vh; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*	STYLES */
+.marketing {
+	color: white;
+}
+
+.title{
+	color: white;
+}
+
+.va{
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.cards:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0);
+	/*text-shadow: 0px 1px 8px white;*/
+	border-radius: 10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.file {
+	visibility: hidden;
+	position: absolute;
+}
+
+/*	SIDENAV	*/
+.sidenav {
+    height: 100vh;
+    width: 0; 
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    background-color: #272727;
+    overflow-x: hidden;
+    transition: 0.6s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #d0d0d0;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.sidenav nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #d0d0d0;
+    transition: 0.3s;
+}
+
+.sidenav nav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav ul {
+    padding: 0;
+}
+
+.sidenav ul li {
+    padding: 6px;
+    border-bottom: 1px solid rgba(220,220,220,0.17);
+}
+
+.sidenav ul li.dropdown ul li a {
+    color: #616161;    
+}
