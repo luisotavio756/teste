@@ -22,7 +22,9 @@ body {
   background-size: cover;
 }
 
-
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  opacity: 0.5;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 

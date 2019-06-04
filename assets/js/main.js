@@ -60,6 +60,52 @@ $(document).ready(function($) {
 		$(this).hide()
 	});
 
+	// FILE IMAGE
+
+	$(document).on('click', '.form-img .browse-img', function(){
+		var file = $(this).parent().parent().find('.file-img');
+		file.trigger('click');
+	});
+
+	$(document).on('change', '.form-img .file-img', function(){
+		$(this).parent().find('.browse-input-img').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+	});
+
    	$(".telefone").mask('(00) 00000-0000');
 
+   	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+		if (currentScrollPos > 500) {
+			document.getElementsByClassName("navbar")[0].classList.add('navbar-dark');
+			$('.nav-link').addClass('nav-link-r')
+			document.getElementById("myBtn").style.display = "block";
+		}else{
+			document.getElementsByClassName("navbar")[0].classList.remove('navbar-dark');
+			$('.nav-link').removeClass('nav-link-r')
+			document.getElementById("myBtn").style.display = "none";
+		}
+
+		if (prevScrollpos > currentScrollPos) {
+			document.getElementsByClassName("navbar")[0].style.top = "0";
+		} else {
+			document.getElementsByClassName("navbar")[0].style.top = "-75px";
+		}
+
+		prevScrollpos = currentScrollPos;
+	} 
+
 });
+
+function openNav() {
+	$("#mob-sidenav ul, .closebtn").fadeIn()
+	$("#mob-sidenav").css({"width" : "100%"})
+  	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+	$("#mob-sidenav ul, .closebtn").fadeOut(200)
+	$("#mob-sidenav").css({"width" : "0"})
+	document.body.style.backgroundColor = "white";
+
+}
