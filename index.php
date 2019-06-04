@@ -15,19 +15,7 @@
 	<link rel="stylesheet" href="assets/plugins/owl-carousel/css/owl.carousel.min.css" />
 
 	<style type="text/css">
-
-	    /*position: absolute;
-	    bottom: 2px;
-	    left: -30px;
-	    right: 0;
-	    width: 6px;
-	    height: 6px;
-	    content: '';
-	    background: #ce9c6b;
-	    -webkit-transform: rotate(135deg);
-	    -ms-transform: rotate(135deg);
-	    transform: rotate(135deg);
-	    #1b1b1b*/
+		
 
 	</style>
 </head>
@@ -41,17 +29,20 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="">Home</a>
+						<li class="nav-item position-relative px-1">
+							<a class="nav-link scrollsuave" href="#"><div class="div-nav"></div>Home</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="">Quem Somos</a>
+						<li class="nav-item position-relative px-1">
+							<a class="nav-link scrollsuave" href="#quemsomos"><div class="div-nav"></div>Quem Somos</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="">Serviços</a>
+						<li class="nav-item position-relative px-1">
+							<a class="nav-link scrollsuave" href="#servicos"><div class="div-nav"></div>Serviços</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="">Contato</a>
+						<li class="nav-item position-relative px-1">
+							<a class="nav-link scrollsuave" href="#clientes"><div class="div-nav"></div>Clientes</a>
+						</li>
+						<li class="nav-item position-relative px-1">
+							<a class="nav-link scrollsuave" href="#contato"><div class="div-nav"></div>Contato</a>
 						</li>
 					</ul>
 				</div>
@@ -60,17 +51,20 @@
 			    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i style="font-size: 22px" class="fas fa-chevron-circle-right"></i></a>
 			    <nav class="h-100" style="display: flex; align-items: center; justify-content: center;">
 			        <ul class="navbar-nav w-100">
-						<li class="nav-item w-75">
-							<a class="nav-link text-center" style="color: #ce9c6b !important; font-weight: 600" href="">Home</a>
+						<li class="nav-item w-75 position-relative px-1">
+							<a class="nav-link text-center scrollsuave" href="#" href=""><div class="div-mob"></div>Home</a>
 						</li>
-						<li class="nav-item w-75">
-							<a class="nav-link text-center" style="color: #ce9c6b !important; font-weight: 600" href="">Quem Somos</a>
+						<li class="nav-item w-75 position-relative px-1">
+							<a class="nav-link text-center scrollsuave" href="#quemsomos" href=""><div class="div-mob"></div>Quem Somos</a>
 						</li>
-						<li class="nav-item w-75">
-							<a class="nav-link text-center" style="color: #ce9c6b !important; font-weight: 600" href="">Serviços</a>
+						<li class="nav-item w-75 position-relative px-1">
+							<a class="nav-link text-center scrollsuave" href="#servicos" href=""><div class="div-mob"></div>Serviços</a>
 						</li>
-						<li class="nav-item w-75">
-							<a class="nav-link text-center" style="color: #ce9c6b !important; font-weight: 600" href="">Contato</a>
+						<li class="nav-item w-75 position-relative px-1">
+							<a class="nav-link text-center scrollsuave" href="#clientes" href=""><div class="div-mob"></div>Clientes</a>
+						</li>
+						<li class="nav-item w-75 position-relative px-1">
+							<a class="nav-link text-center scrollsuave" href="#contato" href=""><div class="div-mob"></div>Contato</a>
 						</li>
 					</ul>
 			    </nav>
@@ -90,7 +84,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="row featurette" style="min-height: 450px">
+		<div id="quemsomos" class="row featurette" style="min-height: 450px">
 			<div class="col-lg-10 mx-auto py-5">
 				<div class="row">
 					<div class="col-lg-7">
@@ -109,23 +103,35 @@
 			<div class="col-lg-10 mx-auto marketing py-5">
 				<div class="row">
 					<div class="col-lg-12 mb-5">
-						<h1 class="text-center title">Serviços</h1>
-						<div class="w-25 mx-auto" style=" background-color: white; height: 4px; border-radius: 10px"></div>
+						<h1 class="text-center title">Sobre Nós</h1>
+						<div class="w-25 mx-auto" style="background-color: white; height: 4px; border-radius: 10px"></div>
 					</div>
 					<div class="col-lg-4 cards pt-3">
-						<img src="assets/img/170.png" class="rounded-circle img-fluid">
-						<h3 class="heading my-3">Heading</h3>
-						<p class="text-justify servicos">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+						<div class="mx-auto" style="background-color: #333; width: 170px; height: 170px; border-radius: 360px; line-height: 230px">
+							<i style="font-size: 90px; color: #ce9c6b" class="fas fa-rocket"></i>
+						</div>
+						<!-- <img src="assets/img/170.png" class="rounded-circle img-fluid"> -->
+						<h3 class="heading my-3">Rapidez</h3>
+						<p class="text-justify servicos">Em nossa barbearia, contamos com 5 barbeiros para que você não tenha incomodo com a espera, dessa forma, trabalhamos sempre para melhorar a comodidade dos nossos clientes.</p>
 					</div>
 					<div class="col-lg-4 cards pt-3">
-						<img src="assets/img/170.png" class="rounded-circle img-fluid">
-						<h3 class="heading my-3">Heading</h3>
-						<p class="text-justify servicos">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+						<div class="mx-auto" style="background-color: #333; width: 170px; height: 170px; border-radius: 360px; line-height: 230px">
+							<i style="z-index: 2 !important; margin-bottom: 45px !important; font-size: 70px; color: #ce9c6b" class="fas fa-wine-glass-alt"></i>
+							<i style="z-index: 1 !important; position: absolute;  left: 120px; top: 100px; font-size: 50px; color: #ce9c6b" class="fas fa-gamepad"></i>
+							<i style="z-index: 0 !important; position: absolute;  right: 120px; top: 100px; font-size: 50px; color: #ce9c6b" class="fas fa-hamburger"></i>
+							
+						</div>
+						<h3 class="heading my-3">Comodidade</h3>
+						<p class="text-justify servicos">Esperar com bebidas e comidas disponíveis, sinuca, Wi-Fi e outros meios de entretenimento é melhor maneira de esperar. Chegue em nosso estabelecimento e fique a vontade, é isso que sempre buscamos.</p>
 					</div>
 					<div class="col-lg-4 cards pt-3">
-						<img src="assets/img/170.png" class="rounded-circle img-fluid" >
-						<h3 class="heading my-3">Heading</h3>
-						<p class="text-justify servicos">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+						<div class="mx-auto" style="background-color: #333; width: 170px; height: 170px; border-radius: 360px; line-height: 230px">
+							<i style="font-size: 90px; color: #ce9c6b" class="fas fa-cut"></i>
+							<!-- <img src="assets/img/barber.png" width="80" class="img-fluid"> -->
+						</div>
+						
+						<h3 class="heading my-3">Estilo</h3>
+						<p class="text-justify servicos">Aqui trabalhamos com todos os tipos de corte. Fade, Social, Militar e entre outros cortes do momento, a escolha é sempre sua e você sempre vai sair esbajando beleza e masculinidade pela sua cidade.</p>
 					</div>
 				</div>
 			</div>
@@ -143,7 +149,7 @@
 				</div>
 			</div>	
 		</div>
-		<div class="row paralax">
+		<div id="contato" class="row paralax">
 			<div class="col-lg-10 mx-auto py-5 " style="min-height: 100vh">
 				<div class="row">
 					<div class="col-lg-12 mb-5">
@@ -197,7 +203,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row services" style="min-height: 450px;">
+		<div id="servicos" class="row services" style="min-height: 450px;">
 			<div class="col-lg-10 mx-auto py-5">
 				<div class="row">
 					<div class="col-lg-12">
@@ -270,7 +276,7 @@
 				</div>
 			</div>	
 		</div>
-		<div class="row" style="min-height: 500px">
+		<div id="clientes" class="row" style="min-height: 500px">
 			<div class="col-lg-10 py-5 mx-auto">
 				<div class="row">
 					<div class="col-lg-12">
@@ -400,6 +406,32 @@
 		
 
 		$('.owl-carousel').owlCarousel({
+		    // margin:35,
+		    // responsiveClass:true,
+		    // responsive:{
+		    //     0:{
+		    //         items:1,
+		    //         nav:true
+		    //     },
+		    //     600:{
+		    //         items:3,
+		    //         nav:true,
+		    //         animateOut: 'slideOutDown',
+		    // 		animateIn: 'flipInX',
+		    // 		smartSpeed:450,
+		    // 		stagePadding: 50,
+		    //     },
+		    //     1000:{
+		    //         items:4,
+		    //         nav:true,
+		    //         loop:true,
+		    //         animateOut: 'slideOutDown',
+		    // 		animateIn: 'flipInX',
+		    // 		smartSpeed:450,
+		    // 		stagePadding: 50,
+		    //     }
+		    // }
+
 			
 		    
 		    loop: true,
