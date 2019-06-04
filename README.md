@@ -1,2 +1,2 @@
-EXAMPLE TEMPLATE IS AVAILABLE IN https://templatebarber.herokuapp.com/
+TEMPLATE EXAMPLE IS AVAILABLE IN https://templatebarber.herokuapp.com/
 
