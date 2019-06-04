@@ -61,7 +61,6 @@ a:hover{
 
 .nav-link-r{
 	color: #ce9c6b !important;
-	font-weight: 600;
 	transition: all 1s !important;
 }
 
@@ -210,7 +209,7 @@ textarea:focus {
 /*	PARALAX */
 .paralax {
 	/* The image used */
-	background-image: url("../img/banner.jpg");
+	background-image: url("../../public/img/banner.jpg");
 
 	/* Set a specific height */
 	min-height: 100vh; 
@@ -298,8 +297,37 @@ textarea:focus {
     border-bottom: 1px solid rgba(220,220,220,0.17);
 }
 
-.sidenav ul li.dropdown ul li a {
-    color: #616161;    
+.sidenav ul li a{
+	color: #ce9c6b !important; 
+    font-weight: 600   ;
+}
+
+.div-nav{
+	position: absolute;
+    bottom: 17px;
+    left: 0px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #ce9c6b;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.sidenav ul li a .div-mob{
+	position: absolute;
+    bottom: 25px;
+    left: 60px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #ce9c6b;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 /*SERVICES*/

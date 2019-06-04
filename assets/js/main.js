@@ -28,10 +28,13 @@ $(document).ready(function($) {
         event.preventDefault();
         $('html, body').animate({scrollTop: 0 }, 600);
    	});
-
+    var aux = 0;
     $(".scrollsuave").click(function(event){        
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+        closeNav();
+        // aux = 1;
+        // $(".navbar").addClass("top-75");
    	});
 	
 
@@ -74,6 +77,7 @@ $(document).ready(function($) {
    	$(".telefone").mask('(00) 00000-0000');
 
    	var prevScrollpos = window.pageYOffset;
+   	
 	window.onscroll = function() {
 		var currentScrollPos = window.pageYOffset;
 		if (currentScrollPos > 500) {
@@ -85,15 +89,19 @@ $(document).ready(function($) {
 			$('.nav-link').removeClass('nav-link-r')
 			document.getElementById("myBtn").style.display = "none";
 		}
-
-		if (prevScrollpos > currentScrollPos) {
-			document.getElementsByClassName("navbar")[0].style.top = "0";
-		} else {
-			document.getElementsByClassName("navbar")[0].style.top = "-75px";
+		if (1) {
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementsByClassName("navbar")[0].style.top = "0";
+			} else {
+				document.getElementsByClassName("navbar")[0].style.top = "-75px";
+			}
 		}
 
 		prevScrollpos = currentScrollPos;
+		
 	} 
+
+   
 
 });
 
