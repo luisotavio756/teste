@@ -10,9 +10,7 @@
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-<p align="center">
-  <img alt="Demo" src="https://drive.google.com/file/d/1yxVhcrUkCbJiExRCryVQmdXXVfaHWXD9/view">
-</p>
+[View Demo](https://drive.google.com/file/d/1yxVhcrUkCbJiExRCryVQmdXXVfaHWXD9/view)
 
 ## :rocket: Technologies
 
