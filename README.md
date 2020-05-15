@@ -1,5 +1,5 @@
 <h1 align="center">
-    BarberShop
+   Template BarberShop
 </h1>
 
 <h4 align="center">
